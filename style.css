@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: auto;
+  text-align: center;
+  margin-top: 50vh;
+
+  transform: translate(0%, -50%) skew(0deg, 0deg);
+
+  font-size: 100px;
+}
+html {
+  background-color: black;
+}
