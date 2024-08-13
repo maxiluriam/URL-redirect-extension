@@ -1,0 +1,16 @@
+.list-item-div {
+  display: flex;
+}
+.add-button {
+  margin: auto;
+  margin-top: 10px;
+  align-items: center;
+}
+.container {
+  align-items: center;
+}
+.add-button-container {
+  display: flex;
+  align-items: center;
+  padding: auto;
+}
