@@ -10,7 +10,9 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
       lastFocusedWindow: true,
     });
     array.forEach((url) => {
-      const parsedTabUrl = tab.url.replace(/^https?:\/\//, "");
+      const parsedTabUrl = tab.url
+        .replace(/^https?:\/\//, "")
+        .replace(/^www\./, "");
       if (parsedTabUrl.startsWith(url) && url != "") {
         chrome.tabs.update(tabId, { url: "./siteblocked.html" });
       }

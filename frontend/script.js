@@ -42,7 +42,9 @@ function renderList(container, array) {
     input.value = array[i];
 
     input.addEventListener("change", (event) => {
-      array[i] = event.target.value.replace(/^https?:\/\//, "");
+      array[i] = event.target.value
+        .replace(/^https?:\/\//, "")
+        .replace(/^www\./, "");
       setLocalStorage(array);
     });
 
